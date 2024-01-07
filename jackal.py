@@ -70,7 +70,7 @@ __________________________________________
                         f.write(girdi[0:1] + girdi[1].upper() + girdi[2:] + satir + "." +"\n")
                         f.write(satir + girdi[0:1] + girdi[1].upper() + girdi[2:] + "\n")
                         f.write(satir + girdi[0:1] + girdi[1].upper() + girdi[2:] + "." +"\n")
-                        break
+                        
         dosya_yolu = os.path.join(os.getcwd(), "passwords.txt")
         print(os.path.dirname(dosya_yolu))               
     else:
