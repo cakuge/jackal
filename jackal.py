@@ -19,7 +19,7 @@ __________________________________________
      __               __           .__     
     |__|____    ____ |  | _______  |  |    
     |  \__  \ _/ ___\|  |/ /\__  \ |  |    
-    |  |/ __ \\  \___|    <  / __ \|  |__  
+    |  |/ __ \  \___|    <  / __ \|  |__  
 /\__|  (____  /\___  >__|_ \(____  /____/  
 \______|    \/     \/     \/     \/        
                                                     
@@ -27,18 +27,18 @@ __________________________________________
 /_____/_____/_____/_____/_____/_____/_____/
 """)
     print(colorama.Fore.YELLOW + "Hoşgeldiniz, aktive etmeden önce lütfen readme.txt yi okuyunuz." + colorama.Fore.RESET)
-    print(colorama.Fore.YELLOW + "Devam etmek için -y- tuşuna basın ya da -n- yazın." + colorama.Fore.RESET)
+    print(colorama.Fore.YELLOW + "Devam etmek için [y] tuşuna basın ya da [n] yazın." + colorama.Fore.RESET)
     devam = input()
     if devam == "y":
 
         girdiler = []
         while True:
-            girdi = input("Etiket Giriniz: ")
+            girdi = input(colorama.Fore.RED + "Etiket Giriniz: " + colorama.Fore.RESET)
             girdiler.append(girdi)
-            print(colorama.Fore.GREEN + "Girilen etiketler:", girdiler, colorama.Fore.RESET)
+            print(colorama.Fore.RED + "Girilen etiketler:", colorama.Fore.GREEN + ", ".join(girdiler) + colorama.Fore.RESET)
             devam = input("Devam etmek için (y) durdurmak için (n) giriniz: ")
             if devam == "n":
-                print(colorama.Fore.YELLOW + "Dosyanız şu dizinde oluşturuldu." + colorama.Fore.RESET)
+                print(colorama.Fore.YELLOW + "Dosyanız oluşturuldu." + colorama.Fore.RESET)
                 break
 
         with open("pws.txt", "r") as f:
@@ -74,9 +74,7 @@ __________________________________________
     else:
         print(colorama.Fore.RED + "Çıkış Yapılıyor." + colorama.Fore.RESET)
         return
-
-
+    os.system("python controller.py")
 if __name__ == "__main__":
     main()
-    os.system("python controller.py")
-    sys.exit()
+    print(colorama.Fore.YELLOW + "Çıkış Yapıldı." + colorama.Fore.RESET)
