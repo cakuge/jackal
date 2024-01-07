@@ -23,7 +23,3 @@ ________________________________________________________________________________
 -!!! Bu yazılım siber farkındalık yaratmak adına geliştirilmiştir.  !!!
 
 -!!! Bu yazılımı kullanırken kendi eylemleriniz ve davranışlarınız için tüm yasal sorumluluk size aittir. !!!
-
-----       Projeye Katkı Sunanlar     ----
-
-● Albatroz
