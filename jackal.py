@@ -4,10 +4,7 @@ import sys
 
 # -*- coding: utf-8 -*-
 
-if os.name == "nt":
-        os.system("cls")
-else:
-        os.system("clear")
+
 
 def main():
     def sekilli_yazi(metin):
@@ -69,6 +66,7 @@ __________________________________________
                         f.write(girdi[0:1] + girdi[1].upper() + girdi[2:] + satir + "." +"\n")
                         f.write(satir + girdi[0:1] + girdi[1].upper() + girdi[2:] + "\n")
                         f.write(satir + girdi[0:1] + girdi[1].upper() + girdi[2:] + "." +"\n")
+                        break
         dosya_yolu = os.path.join(os.getcwd(), "passwords.txt")
         print(os.path.dirname(dosya_yolu))               
     else:
@@ -77,4 +75,4 @@ __________________________________________
     os.system("python controller.py")
 if __name__ == "__main__":
     main()
-    print(colorama.Fore.YELLOW + "Çıkış Yapıldı." + colorama.Fore.RESET)
+    print(colorama.Fore.GREEN + "Çıkış Yapıldı." + colorama.Fore.RESET)
