@@ -20,7 +20,9 @@ __________________________________________
 
 ----        Projenin Faydaları        ----
 -Kullanıcı şifrelerinin zayıflığı veya güçlülüğü hakkında katkı sağlar. ✓
+
 -Girilen etiketlere göre harika ve yer kaplamayan etkili bir wordlist oluşturur ✓
+
 -Kullanıcılar ağır ve çok uzun süreler isteyen kombinasyon oluşturucalara göre önemli ölçüde zaman kazanır ✓
 ________________________________________________________________________________________________________________
 -!!! Bu proje internette yer alan&sızan parolaların analiziyle ve kombinleriyle oluşturulmuştur. !!!
