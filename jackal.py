@@ -33,7 +33,7 @@ __________________________________________
         while True:
             girdi = input("Etiket Giriniz: ")
             girdiler.append(girdi)
-            print(colorama.Fore.RED + "Girilen etiketler:", girdiler, colorama.Fore.RESET)
+            print(colorama.Fore.GREEN + "Girilen etiketler:", girdiler, colorama.Fore.RESET)
             devam = input("Devam etmek için (y) durdurmak için (n) giriniz: ")
             if devam == "n":
                 print(colorama.Fore.YELLOW + "Dosyanız şu dizinde oluşturuldu." + colorama.Fore.RESET)
