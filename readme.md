@@ -1,4 +1,6 @@
-----Projenin En Etkili Kullanım Yöntemi----
+________________________________________________________________________________________________________________
+
+                                     ----Projenin En Etkili Kullanım Yöntemi----
 
 <!--Sadece etiketler girerek kullanınız. -->
 
@@ -6,7 +8,9 @@
 
 × yanlış kullanım: ali195,sefa31,tunc_bayern ×
 
-----        Projenin Faydaları        ----
+________________________________________________________________________________________________________________
+
+                                    ----        Projenin Faydaları        ----
 
 -Kullanıcı şifrelerinin zayıflığı veya güçlülüğü hakkında katkı sağlar. ✓
 
