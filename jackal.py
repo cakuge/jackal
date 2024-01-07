@@ -1,8 +1,31 @@
 import os
-# encoding:utf-8
+import colorama
+# -*- coding: utf-8 -*-
+
+if os.name == "nt":
+        os.system("cls")
+else:
+        os.system("clear")
+
 def main():
-    print("Hoşgeldiniz. Programı çalıştırmadan önce lütfen readme.txt yi okuyunuz. programdan çıkmak için exit yazmanız yeterlidir. ")
-    print("Devam etmek için y tuşuna basın.")
+    def sekilli_yazi(metin):
+     print(colorama.Fore.BLUE + metin + colorama.Fore.RESET)
+
+    sekilli_yazi("""
+__________________________________________
+/_____/_____/_____/_____/_____/_____/_____/
+     __               __           .__     
+    |__|____    ____ |  | _______  |  |    
+    |  \__  \ _/ ___\|  |/ /\__  \ |  |    
+    |  |/ __ \\  \___|    <  / __ \|  |__  
+/\__|  (____  /\___  >__|_ \(____  /____/  
+\______|    \/     \/     \/     \/        
+                                                    
+ __________________________________________
+/_____/_____/_____/_____/_____/_____/_____/
+""")
+    print(colorama.Fore.YELLOW + "Hoşgeldiniz, aktive etmeden önce lütfen readme.txt yi okuyunuz." + colorama.Fore.RESET)
+    print(colorama.Fore.YELLOW + "Devam etmek için -y- tuşuna basın ya da -n- yazın." + colorama.Fore.RESET)
     devam = input()
     if devam == "y":
 
@@ -10,11 +33,11 @@ def main():
         while True:
             girdi = input("Etiket Giriniz: ")
             girdiler.append(girdi)
-            print("Girilen girdiler:", girdiler)
+            print(colorama.Fore.RED + "Girilen etiketler:", girdiler, colorama.Fore.RESET)
             devam = input("Devam etmek için (y) durdurmak için (n) giriniz: ")
             if devam == "n":
-               print("Dosya şu dizinde oluşturuldu:", os.path.dirname("yeni_pws.txt"))
-            break
+                print(colorama.Fore.YELLOW + "Dosyanız şu dizinde oluşturuldu." + colorama.Fore.RESET)
+                break
 
         with open("pws.txt", "r") as f:
             pws = f.read()
@@ -55,9 +78,12 @@ def main():
                         f.write(girdi + satir + "." + "\n")
                         f.write(girdi.capitalize() + "" + satir + "\n")
                         f.write(girdi.upper() + satir + "\n")
-                        
+        dosya_yolu = os.path.join(os.getcwd(), "passwords.txt")
+        print(os.path.dirname(dosya_yolu))               
     else:
+        print(colorama.Fore.RED + "Çıkış Yapılıyor." + colorama.Fore.RESET)
         return
+
 
 if __name__ == "__main__":
     main()
