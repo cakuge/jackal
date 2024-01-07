@@ -1,7 +1,7 @@
-![Screenshot_2024-01-07_17_42_19](https://github.com/cakuge/jackal/assets/93228791/9ce16588-0e45-4e5d-ad49-0f4c6ffdd2e3)
-![Screenshot_2024-01-07_17_45_32](https://github.com/cakuge/jackal/assets/93228791/364056c1-2585-4c17-9b58-9f791c9d879a)
+![Screenshot_2024-01-07_21_43_15](https://github.com/cakuge/jackal/assets/93228791/9d1dd703-03bb-42ea-b0e6-5955e1fb7de4)
+![Screenshot_2024-01-07_21_43_37](https://github.com/cakuge/jackal/assets/93228791/bee176b9-0cb9-459e-a611-9564ad7d24ad)
 ![Screenshot_2024-01-07_17_46_27](https://github.com/cakuge/jackal/assets/93228791/58548e9e-792a-4bec-8821-13e4df89f0f9)
-![Screenshot_2024-01-07_17_46_57](https://github.com/cakuge/jackal/assets/93228791/542d3b33-d2fe-4b24-b02c-8cf487ba8914)
+![Screenshot_2024-01-07_21_44_20](https://github.com/cakuge/jackal/assets/93228791/11a2794a-b6a8-441e-b1b0-8335be972857)
 
 
 ________________________________________________________________________________________________________________
