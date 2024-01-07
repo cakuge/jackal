@@ -39,7 +39,7 @@ __________________________________________
             devam = input("Devam etmek için (y) durdurmak için (n) giriniz: ")
             if devam == "n":
                 print(colorama.Fore.YELLOW + "Dosyanız oluşturuldu." + colorama.Fore.RESET)
-                
+               
                 break
 
         with open("pws.txt", "r") as f:
@@ -75,9 +75,10 @@ __________________________________________
         print(os.path.dirname(dosya_yolu))               
     else:
         print(colorama.Fore.RED + "Çıkış Yapılıyor." + colorama.Fore.RESET)
+        devam == False
         return
     os.system("python controller.py")
-if __name__ == "__main__":
-    main()
+    print("Dosyanız Oluşturuldu.")
     print(colorama.Fore.GREEN + "Çıkış Yapıldı." + colorama.Fore.RESET)
-    os._exit(0)
+if __name__ == "__main__":
+     main()
