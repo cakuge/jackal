@@ -39,7 +39,7 @@ __________________________________________
             devam = input("Devam etmek için (y) durdurmak için (n) giriniz: ")
             if devam == "n":
                 print(colorama.Fore.YELLOW + "Dosyanız oluşturuldu." + colorama.Fore.RESET)
-                os._exit(0)
+                
                 break
 
         with open("pws.txt", "r") as f:
