@@ -1,5 +1,7 @@
 import os
 import colorama
+import sys
+
 # -*- coding: utf-8 -*-
 
 if os.name == "nt":
@@ -48,12 +50,8 @@ __________________________________________
                 f.write(girdi + "." +"\n")
                 f.write("."+girdi +"\n")
                 f.write(girdi.upper() + "\n")
+                f.write(girdi.capitalize())
                 for satir in pws.splitlines():
-                    if len(girdi) > 2:
-                        f.write(girdi[0:1] + girdi[1].upper() + girdi[2].upper() + girdi[3:] + "\n")
-                        f.write(girdi[0:1] + girdi[1].upper() + girdi[2].upper() + girdi[3:] +satir +"\n")
-                        f.write(satir + girdi[0:1] + girdi[1].upper() + girdi[2].upper() + girdi[3:] + "\n")
-                    else:
                         f.write(girdi + "\n")
                         f.write(satir + girdi + "\n")
                         f.write(satir + girdi + "." +"\n")
@@ -62,22 +60,15 @@ __________________________________________
                         f.write(girdi + satir + "." + "\n")
                         f.write(girdi.capitalize() + "" + satir + "\n")
                         f.write(girdi.upper() + satir + "\n")
-                    if len(girdi) > 1:
+                        f.write(girdi[0:1] + girdi[1].upper() + girdi[2].upper() + girdi[3:] + "\n")
+                        f.write(girdi[0:1] + girdi[1].upper() + girdi[2].upper() + girdi[3:] +satir +"\n")
+                        f.write(satir + girdi[0:1] + girdi[1].upper() + girdi[2].upper() + girdi[3:] + "\n")
                         f.write(girdi[0:1] + girdi[1].upper() + girdi[2:] + "\n")
                         f.write(girdi[0:1] + girdi[1].upper() + girdi[2:] + "." +"\n")
                         f.write(girdi[0:1] + girdi[1].upper() + girdi[2:] + satir + "\n")
                         f.write(girdi[0:1] + girdi[1].upper() + girdi[2:] + satir + "." +"\n")
                         f.write(satir + girdi[0:1] + girdi[1].upper() + girdi[2:] + "\n")
                         f.write(satir + girdi[0:1] + girdi[1].upper() + girdi[2:] + "." +"\n")
-                    else:
-                        f.write(girdi + "\n")
-                        f.write(satir + girdi + "\n")
-                        f.write(satir + girdi + "." +"\n")
-                        f.write(satir + girdi.capitalize() + "\n")
-                        f.write(girdi + satir + "\n")
-                        f.write(girdi + satir + "." + "\n")
-                        f.write(girdi.capitalize() + "" + satir + "\n")
-                        f.write(girdi.upper() + satir + "\n")
         dosya_yolu = os.path.join(os.getcwd(), "passwords.txt")
         print(os.path.dirname(dosya_yolu))               
     else:
@@ -87,3 +78,5 @@ __________________________________________
 
 if __name__ == "__main__":
     main()
+    os.system("python controller.py")
+    sys.exit()
